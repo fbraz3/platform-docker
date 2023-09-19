@@ -33,5 +33,4 @@ jobs:
           build-args: |
             PHP_VERSION=7.1
           tags: |
-            fbraz3/lnmp:7.1
-            fbraz3/lemp:7.1
+            fbraz3/platform:7.1
