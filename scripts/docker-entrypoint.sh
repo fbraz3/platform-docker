@@ -103,13 +103,9 @@ done
 # START SERVICES
 /etc/init.d/cron restart
 /etc/init.d/php$PHPVERSION-fpm restart
-/etc/init.d/mariadb restart
 /etc/init.d/nginx restart
 sleep 1
 /etc/init.d/monit restart
-
-# CREATE MARIADB USER
-mysql < /build.sql
 
 # KEEP CONTAINER ALIVE
 /usr/bin/tail -f /var/log/nginx/access.log
