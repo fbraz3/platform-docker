@@ -22,8 +22,8 @@ ENV ENTRYPOINT_COMMAND="/usr/bin/tail -f /var/log/nginx/*.log"
 # Define tests for each flavor                 | OK
 # Implement tests for each flavor              |
 # refactor README.md                           |
-# rename github project to php-nginx           |
-# update remote repo name in local git         |
+# rename github project to php-nginx           | OK
+# update remote repo name in local git         | OK
 # Create deepwiki page                         |
 # Update dockerhub image description           |
 
