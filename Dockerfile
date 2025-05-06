@@ -1,5 +1,17 @@
 FROM ubuntu:22.04
 
+# TODO list
+# Rearrange directory structure                |
+# filter entrypoint to get only nginx stuff    |
+# copy entrypoint to /entrypoints folder       |
+# refactor dockerfile to use php-fpm image     |
+# compile and test loccaly                     |
+# add code of conduct and contributing.md      |
+# Create gh actions for build and push         |
+# Define tests for each flavor                 |
+# Implement tests for each flavor              |
+# refactor README.md                           |
+
 ARG PHP_VERSION=8.2
 ARG PHALCON_VERSION="3.4.5-1"
 
