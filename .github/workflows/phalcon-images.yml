@@ -43,6 +43,7 @@ jobs:
           cache-to: type=gha,mode=max
           build-args: |
             PHP_VERSION=${{ matrix.php_version }}
+            BUILD_FLAVOR=-phalcon
           tags: |
             fbraz3/php-nginx:${{ matrix.php_version }}-amd64
 
@@ -71,6 +72,7 @@ jobs:
           cache-to: type=gha,mode=max
           build-args: |
             PHP_VERSION=${{ matrix.php_version }}
+            BUILD_FLAVOR=-phalcon
           tags: |
             fbraz3/php-nginx:${{ matrix.php_version }}-arm64
 
@@ -106,6 +108,7 @@ jobs:
           cache-to: type=gha,mode=max
           build-args: |
             PHP_VERSION=${{ matrix.php_version }}
+            BUILD_FLAVOR=-phalcon
           tags: |
             fbraz3/php-nginx:${{ matrix.php_version }}-phalcon
             ${{ matrix.is_latest && 'fbraz3/php-nginx:latest-phalcon' || '' }}
