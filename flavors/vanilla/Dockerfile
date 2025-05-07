@@ -28,6 +28,7 @@ ENV ENTRYPOINT_COMMAND="/usr/bin/tail -f /var/log/nginx/*.log"
 # merge to main branch                         |
 # Create deepwiki page                         |
 # Update readme with deepwiki link             |
+# Create build status badges                   |
 # Update dockerhub image description           |
 
 COPY ../../assets/scripts/docker-entrypoint.sh /entrypoints/2-nginx-entrypoint.sh
