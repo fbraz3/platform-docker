@@ -25,8 +25,8 @@ ENV ENTRYPOINT_COMMAND="/usr/bin/tail -f /var/log/nginx/*.log"
 # rename github project to php-nginx           | OK
 # update remote repo name in local git         | OK
 # enable cron build                            | OK
-# merge to main branch                         |
-# Create deepwiki page                         |
+# merge to main branch                         | OK
+# Create deepwiki page                         | OK
 # Update readme with deepwiki link             | OK
 # Create build status badges                   | OK
 # Enable funding on github                     | OK
