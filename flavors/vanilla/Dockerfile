@@ -16,12 +16,12 @@ ENV ENTRYPOINT_COMMAND="/usr/bin/tail -f /var/log/nginx/*.log"
 # refactor dockerfile to use php-fpm image     | OK
 # compile and test loccaly                     | OK
 # create dockerhub repo php-nginx              | OK
-# delcare platform image as php-nginx          |
+# delcare platform image as php-nginx          | OK
 # add code of conduct and contributing.md      |
 # Create gh actions for build and push         | OK
 # Define tests for each flavor                 | OK
 # Implement tests for each flavor              | OK
-# refactor README.md                           |
+# refactor README.md                           | OK
 # rename github project to php-nginx           | OK
 # update remote repo name in local git         | OK
 # enable cron build                            |
