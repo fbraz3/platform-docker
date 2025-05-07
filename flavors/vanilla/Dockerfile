@@ -20,7 +20,7 @@ ENV ENTRYPOINT_COMMAND="/usr/bin/tail -f /var/log/nginx/*.log"
 # add code of conduct and contributing.md      |
 # Create gh actions for build and push         | OK
 # Define tests for each flavor                 | OK
-# Implement tests for each flavor              |
+# Implement tests for each flavor              | OK
 # refactor README.md                           |
 # rename github project to php-nginx           | OK
 # update remote repo name in local git         | OK
