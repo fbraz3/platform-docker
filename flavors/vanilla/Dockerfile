@@ -27,6 +27,7 @@ ENV ENTRYPOINT_COMMAND="/usr/bin/tail -f /var/log/nginx/*.log"
 # enable cron build                            |
 # merge to main branch                         |
 # Create deepwiki page                         |
+# Update readme with deepwiki link             |
 # Update dockerhub image description           |
 
 COPY ../../assets/scripts/docker-entrypoint.sh /entrypoints/2-nginx-entrypoint.sh
