@@ -14,9 +14,23 @@ jobs:
         include:
           - php_version: '8.4'
             is_latest: true
+          - php_version: '8.3'
+            is_latest: false
           - php_version: '8.2'
             is_latest: false
+          - php_version: '8.1'
+            is_latest: false
+          - php_version: '8.0'
+            is_latest: false
+          - php_version: '7.4'
+            is_latest: false
           - php_version: '7.3'
+            is_latest: false
+          - php_version: '7.2'
+            is_latest: false
+          - php_version: '7.1'
+            is_latest: false
+          - php_version: '7.0'
             is_latest: false
           - php_version: '5.6'
             is_latest: false
@@ -107,4 +121,6 @@ jobs:
             PHP_VERSION=${{ matrix.php_version }}
           tags: |
             fbraz3/php-nginx:${{ matrix.php_version }}
+            fbraz3/php-platform:${{ matrix.php_version }}
             ${{ matrix.is_latest && 'fbraz3/php-nginx:latest' || '' }}
+            ${{ matrix.is_latest && 'fbraz3/php-platform:latest' || '' }}
