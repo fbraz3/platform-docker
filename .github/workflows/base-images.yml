@@ -3,7 +3,7 @@ name: Build Base Images
 on:
   workflow_dispatch:
 #  schedule:
-#    - cron: '0 6 * * 5'
+#    - cron: '0 6 * * 2'
 
 jobs:
   build_images:
@@ -121,6 +121,6 @@ jobs:
             PHP_VERSION=${{ matrix.php_version }}
           tags: |
             fbraz3/php-nginx:${{ matrix.php_version }}
-            fbraz3/php-platform:${{ matrix.php_version }}
+            fbraz3/platform:${{ matrix.php_version }}
             ${{ matrix.is_latest && 'fbraz3/php-nginx:latest' || '' }}
-            ${{ matrix.is_latest && 'fbraz3/php-platform:latest' || '' }}
+            ${{ matrix.is_latest && 'fbraz3/platform:latest' || '' }}

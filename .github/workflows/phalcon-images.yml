@@ -3,7 +3,7 @@ name: Build Phalcon Images
 on:
   workflow_dispatch:
 #  schedule:
-#    - cron: '0 6 * * 5'
+#    - cron: '0 6 * * 2'
 
 jobs:
   build_images:
@@ -126,6 +126,6 @@ jobs:
             BUILD_FLAVOR=-phalcon
           tags: |
             fbraz3/php-nginx:${{ matrix.php_version }}-phalcon
-            fbraz3/php-platform:${{ matrix.php_version }}-phalcon
+            fbraz3/platform:${{ matrix.php_version }}-phalcon
             ${{ matrix.is_latest && 'fbraz3/php-nginx:latest-phalcon' || '' }}
-            ${{ matrix.is_latest && 'fbraz3/php-platform:latest-phalcon' || '' }}
+            ${{ matrix.is_latest && 'fbraz3/platform:latest-phalcon' || '' }}
