@@ -17,7 +17,7 @@ ENV ENTRYPOINT_COMMAND="/usr/bin/tail -f /var/log/nginx/*.log"
 # compile and test loccaly                     | OK
 # create dockerhub repo php-nginx              | OK
 # delcare platform image as php-nginx          | OK
-# add code of conduct and contributing.md      |
+# add code of conduct and contributing.md      | OK
 # Create gh actions for build and push         | OK
 # Define tests for each flavor                 | OK
 # Implement tests for each flavor              | OK
