@@ -30,7 +30,7 @@ ENV ENTRYPOINT_COMMAND="/usr/bin/tail -f /var/log/nginx/*.log"
 # Update readme with deepwiki link             | OK
 # Create build status badges                   | OK
 # Enable funding on github                     | OK
-# Update dockerhub image description           |
+# Update dockerhub image description           | OK
 
 COPY ../../assets/scripts/docker-entrypoint.sh /entrypoints/2-nginx-entrypoint.sh
 RUN chmod +x /entrypoints/2-nginx-entrypoint.sh
