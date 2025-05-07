@@ -9,29 +9,6 @@ ARG BUILD_ARCH
 ENV DEBIAN_FRONTEND=noninteractive
 ENV ENTRYPOINT_COMMAND="/usr/bin/tail -f /var/log/nginx/*.log"
 
-# TODO list
-# Rearrange directory structure                | OK
-# filter entrypoint to get only nginx stuff    | OK
-# copy entrypoint to /entrypoints folder       | OK
-# refactor dockerfile to use php-fpm image     | OK
-# compile and test loccaly                     | OK
-# create dockerhub repo php-nginx              | OK
-# delcare platform image as php-nginx          | OK
-# add code of conduct and contributing.md      | OK
-# Create gh actions for build and push         | OK
-# Define tests for each flavor                 | OK
-# Implement tests for each flavor              | OK
-# refactor README.md                           | OK
-# rename github project to php-nginx           | OK
-# update remote repo name in local git         | OK
-# enable cron build                            | OK
-# merge to main branch                         | OK
-# Create deepwiki page                         | OK
-# Update readme with deepwiki link             | OK
-# Create build status badges                   | OK
-# Enable funding on github                     | OK
-# Update dockerhub image description           | OK
-
 COPY ../../assets/scripts/docker-entrypoint.sh /entrypoints/2-nginx-entrypoint.sh
 RUN chmod +x /entrypoints/2-nginx-entrypoint.sh
 
