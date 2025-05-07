@@ -1,22 +1,19 @@
-# php-nginx
+# Braz PHP-Nginx Docker
 
-## Objective
-This project provides optimized Docker images to run PHP applications with the Nginx web server. It is based on [php-fpm-docker](https://github.com/fbraz3/php-fpm-docker) and [php-base-docker](https://github.com/fbraz3/php-base-docker), supporting multiple PHP versions and architectures.
+This project provides optimized Docker images to run PHP applications with the Nginx web server. 
+
+It is based on [php-fpm-docker](https://github.com/fbraz3/php-fpm-docker) and [php-base-docker](https://github.com/fbraz3/php-base-docker), supporting multiple PHP versions and architectures.
+
+For more technical information, please visit our  [DeepWiki Page](https://deepwiki.com/fbraz3/php-nginx-docker) (AI generated).
+
+## Build Status
+
+[![Build Base Images](https://github.com/fbraz3/php-nginx-docker/actions/workflows/base-images.yml/badge.svg)](https://github.com/fbraz3/php-nginx-docker/actions/workflows/base-images.yml) [![Build Phalcon Images](https://github.com/fbraz3/php-nginx-docker/actions/workflows/phalcon-images.yml/badge.svg)](https://github.com/fbraz3/php-nginx-docker/actions/workflows/phalcon-images.yml)
 
 ## Tags
-The images are available with the following tags:
-
-- `fbraz3/php-nginx:8.4`
-- `fbraz3/php-nginx:8.3`
-- `fbraz3/php-nginx:8.2`
-- `fbraz3/php-nginx:8.1`
-- `fbraz3/php-nginx:8.0`
-- `fbraz3/php-nginx:7.4`
-- `fbraz3/php-nginx:7.3`
-- `fbraz3/php-nginx:7.2`
-- `fbraz3/php-nginx:7.1`
-- `fbraz3/php-nginx:7.0`
-- `fbraz3/php-nginx:5.6`
+Each image is tagged with the PHP version. For example:
+- `fbraz3/php-nginx:8.4` for PHP 8.4
+- `fbraz3/php-nginx:8.4-phalcon` for PHP 8.4 with Phalcon extension
 
 Multi-architecture images (`amd64` and `arm64`) are also available.
 
