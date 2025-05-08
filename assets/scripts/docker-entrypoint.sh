@@ -11,6 +11,7 @@ if  [[ ! -z "$DATA_GUID" ]] && [[ $DATA_GUID =~ ^[0-9]+$ ]] ; then
 fi
 
 $(which sed) -i 's/%PHP_VERSION%/'$PHPVERSION'/g' /etc/nginx/sites-available/default
+$(which sed) -i 's/%PHP_VERSION%/'$PHPVERSION'/g' /etc/nginx/custom-conf/*.conf
 
 # START SERVICES
 /etc/init.d/nginx restart
