@@ -26,9 +26,13 @@ RUN for i in {1..10}; do \
 COPY ../../assets/monit/nginx /etc/monit/conf-enabled/
 COPY ../../assets/nginx/default /etc/nginx/sites-enabled/default
 
+RUN mkdir /etc/nginx/custom-conf/; \
+    touch /etc/nginx/custom-conf/dummy.conf;
+
 # Fix Permissions
 RUN chown -R www-data. /var/log/nginx; \
     chown -R www-data. /var/lib/nginx; \
+    chown -R www-data. /etc/nginx/custom-conf/; \
     chown -R www-data. /etc/nginx/sites-enabled/; \
     chown -R www-data. /etc/nginx/sites-available/; \
     touch /run/nginx.pid; \
