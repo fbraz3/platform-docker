@@ -19,7 +19,9 @@ RUN for i in {1..10}; do \
 
 RUN /usr/bin/unattended-upgrades -v;
 
-RUN apt-get install -y nginx;
+RUN for i in {1..10}; do \
+      apt-get install -fy nginx && break || sleep 10; \
+    done
 
 COPY ../../assets/monit/nginx /etc/monit/conf-enabled/
 COPY ../../assets/nginx/default /etc/nginx/sites-enabled/default

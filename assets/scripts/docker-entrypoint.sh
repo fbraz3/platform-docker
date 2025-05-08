@@ -14,5 +14,4 @@ $(which sed) -i 's/%PHP_VERSION%/'$PHPVERSION'/g' /etc/nginx/sites-available/def
 
 # START SERVICES
 /etc/init.d/nginx restart
-sleep 1
-/etc/init.d/monit restart
+RESTART_MONIT="true"
