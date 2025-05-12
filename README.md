@@ -4,7 +4,9 @@ This project provides optimized Docker images to run PHP applications with the N
 
 It is based on [php-fpm-docker](https://github.com/fbraz3/php-fpm-docker) and [php-base-docker](https://github.com/fbraz3/php-base-docker), supporting multiple PHP versions and architectures.
 
-For more technical information, please visit our  [DeepWiki Page](https://deepwiki.com/fbraz3/php-nginx-docker) (AI generated).
+We also provide an AI generated [DeepWiki Page](https://deepwiki.com/fbraz3/php-nginx-docker) with more technical information.
+
+💡 For a complete list of available images, please visit the [PHP System Docs](https://github.com/fbraz3/php-system-docs) page.
 
 ## Build Status
 
